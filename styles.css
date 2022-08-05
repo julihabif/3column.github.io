@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--very-light-gray);
+}
+
+img{
+    max-width: 30%;
+    display: block;
+}
+.card img{
+    
+  margin-bottom: 2rem;
+}
+h1,p{
+    padding: 2;
+}
+a{
+    text-decoration: none;
+    font-family: "Lexend Deca",sans-serif;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 10px;
+    margin: 20px;
+    max-width:920px ;
+    overflow: hidden;
+}
+
+.card{
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card:nth-child(1) {
+    background-color: var(--bright-orange);
+  }
+  .card:nth-child(2) {
+    background-color: var(--dark-cyan);
+  }
+  .card:nth-child(3) {
+    background-color: var(--very-dark-cyan);
+  }
+  
+.title{
+    font-family: "Big Shoulders Display",cursive;
+    font-weight: 700;
+    color: var(--very-light-gray);
+    margin-bottom: 2rem;
+}
+
+.text{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: var(--transparent-white);
+    margin-bottom: 5.2rem;
+    line-height: 1.8;
+}
+.card:nth-child(1) a {
+    color: var(--bright-orange);
+  }
+  .card:nth-child(2) a {
+    color: var(--dark-cyan);
+  }
+  .card:nth-child(3) a {
+    color: var(--very-dark-cyan);
+  }
+
+  .button{
+    background-color: var(--very-light-gray);
+    padding: .8rem 2rem;
+    border-radius: 30px;
+    border: 2px solid var(--very-light-gray);
+    place-self: start;
+
+  }
+
+  .card .button:hover{
+    color: var(--transparent-white);
+    background: transparent;
+    
+  }
+
+@media (max-width:450px){
+    .cards{
+        flex-direction: column;
+    }
+}
